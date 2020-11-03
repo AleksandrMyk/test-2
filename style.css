@@ -21,6 +21,8 @@ body {
 /*---main table-----------------------------------------------------------------*/
 .section-box-two {
   display: flex;
+  padding: 10px;
+  margin: 0 auto;
 }
 .hiden {
   display: none;
@@ -28,6 +30,8 @@ body {
 .section-box-one {
   display: flex;
   width: 100%;
+  padding: 10px;
+  margin: 0 auto;
   overflow-x: auto;
 }
 .main-box {
@@ -52,35 +56,35 @@ td {
 .column-two > div {
   border: 1px solid black;
 }
-.column-one {
-  display: flex;
-  flex-direction: column;
-  min-height: 50px;
-}
-.column-one__name,
-.column-one__user1,
-.column-one__user2,
-.column-one__user3 {
-  width: 300px;
-  height: 100%;
-}
+.column-one,
 .column-two {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-}
-.column-two__title {
   width: 100%;
+  min-width: 300px;
+}
+
+.column-one__user {
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
+  padding-left: 10px;
+}
+.column-two__title,
+.column-one__title {
+  width: 100%;
+  min-width: 300px;
+  min-height: 40px;
+  padding: 10px;
+  font-weight: 700;
 }
 .column-two__info {
   width: 100%;
+  min-width: 300px;
   height: 100%;
   position: relative;
 }
-.column-one__name,
-.column-two__title {
-  min-height: 40px;
-}
+
 .triangle {
   width: 0;
   height: 0;
@@ -98,4 +102,17 @@ td {
   background-color: black;
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 600px) {
+  .section-box-two {
+    display: flex;
+    flex-direction: column;
+  }
+  .hiden {
+    display: none;
+  }
+  .section-box-one {
+    display: flex;
+  }
 }

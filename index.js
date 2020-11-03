@@ -7,7 +7,9 @@ const age = document.querySelector('#age');
 const status = document.querySelector('#status');
 const work = document.querySelector('#work');
 const educ = document.querySelector('#educ');
-const fullName = document.querySelector('#fullName');
+const user = document.querySelector('#user');
+const phone = document.querySelector('#phone');
+const email = document.querySelector('#email');
 const box1 = document.querySelector('.section-box-one');
 const box2 = document.querySelector('.section-box-two');
 // const close = document.querySelector('#close');
@@ -35,15 +37,14 @@ function showBox() {
 function insertData(event) {
   const idToFind = event.target.dataset.id;
   const dataToFind = data.find(i => i.id === idToFind);
-  console.log(idToFind);
-  console.log(dataToFind);
 
   added.textContent = Object.values(dataToFind.added).join('');
   age.textContent = Object.values(dataToFind.age).join('');
   status.textContent = Object.values(dataToFind.status).join('');
   work.textContent = Object.values(dataToFind.work).join('');
   educ.textContent = Object.values(dataToFind.educ).join('');
-  fullName.textContent = Object.values(event.target.dataset.name).join('');
-  console.log(fullInfo);
-  console.log(fullName);
+  phone.textContent = Object.values(dataToFind.phone).join('');
+  email.textContent = Object.values(dataToFind.email).join('');
+  user.textContent = Object.values(event.target.dataset.name).join('');
+
 }
