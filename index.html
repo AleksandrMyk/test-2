@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Test-2</title>
+   
+  </head>
+  <body>
+    <main>
+      <section class="section-box-one hiden">
+  <table class="main-box">
+	<tbody>
+		<tr>
+			<th class="title">ФИО</th>
+			<th class="title">Телефон</th>
+			<th class="title">Email</th>
+			<th class="title">Skype</th>
+			<th class="title">Комментарий</th>
+		</th>
+		<tr >
+			<td  id="userInfo" data-id="1" data-name="Смородина Алена Александровна" class="user-info">Смородина Алена Александровна</td>
+			<td class="user-info">0987658932</td>
+			<td class="user-info">alenasmorodina@gmail.com</td>
+			<td class="user-info">alenasmorodina</td>
+			<td class="user-info">Встреча завтра на 11:00</td>
+		</tr>
+		<tr >
+			<td id="userInfo" data-id="2" data-name="Мироненнко-Коновалов Александр Игнатьевич" class="user-info">Мироненнко-Коновалов Александр Игнатьевич</td>
+			<td class="user-info">0506123123</td>
+			<td class="user-info">milanovalex@ua.fm</td>
+			<td class="user-info">Milanovalex</td>
+			<td class="user-info">Созвониться в пятницу 05.07.2019.</td>
+		</tr>
+		<tr >
+			<td id="userInfo" data-id="3" data-name="Зайченко Валентина Александровна" class="user-info">Зайченко Валентина Александровна</td>
+			<td class="user-info">0966671290</td>
+			<td class="user-info">zay4enkovalya@mail.ru</td>
+			<td class="user-info">zay4enkovalya</td>
+			<td class="user-info">Очень занят в ближайшие 2 недели. 10.05.2019.</td>
+	</tbody>
+</table>
+      </section>
+      <section class="section-box-two hiden">
+<div class="column-one">
+  <div class="column-one__name">ФИО</div>
+  <div class="column-one__user1">
+    <p id="fullName"></p>
+  </div>
+  <div class="column-one__user2">
+    <p></p>
+  </div>
+  <div class="column-one__user3">
+    <p></p>
+  </div>
+</div>
+<div class="column-two">
+  <div class="column-two__title">Детальная информация</div>
+  <div class="column-two__info">
+    <div class="triangle"></div>
+    <div  class="big-cell">
+      <p id="added" class="added"></p>
+      <p id="age" class="age"></p>
+      <p id="status" class="status"></p>
+      <p id="work" class="work"></p>
+      <p id="educ" class="educ"></p>
+    </div>
+    <button id="close" class="close-info"></button>
+  </div>
+</div>
+      </section>
+    </main>
+    <script src="./index.js" type="module"></script>
+    <script src="./data.js" type="module"></script>
+  </body>
+</html>
+
+
+
